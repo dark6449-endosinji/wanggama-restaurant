@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeMobileMenu);
     });
 
-    // 5. 예약 버튼 → tel: 직접 연결
+    // 5. 예약 문의 버튼 → tel: 직접 연결 (모든 위치 통일)
     const TEL = 'tel:041-355-6070';
-    ['nav-contact-btn', 'footer-contact-btn', 'mobile-contact-btn'].forEach(id => {
+    ['nav-contact-btn', 'footer-contact-btn'].forEach(id => {
         const btn = document.getElementById(id);
         if (btn) btn.addEventListener('click', () => { window.location.href = TEL; });
     });

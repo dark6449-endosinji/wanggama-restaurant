@@ -774,8 +774,12 @@ ul {
         display: none;
     }
 
+    /* 모바일에서 예약 문의 버튼: 작게 유지 */
     .nav-btn {
-        display: none;
+        padding: 7px 14px;
+        font-size: 0.82rem;
+        border-radius: 4px;
+        white-space: nowrap;
     }
 
     .hamburger {
