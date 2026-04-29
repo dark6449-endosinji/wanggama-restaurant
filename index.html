@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -16,15 +16,32 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo"><img src="images/logo1.png" alt="왕가마 숯불 돼지갈비" class="navbar-logo-img"></a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <button id="nav-contact-btn" class="btn-primary nav-btn" style="cursor:pointer; font-family:inherit; font-size:1rem; border:none; outline:none;">예약 문의</button>
+            <div class="nav-right">
+                <button id="nav-contact-btn" class="btn-primary nav-btn" style="cursor:pointer; font-family:inherit; font-size:1rem; border:none; outline:none;">예약 문의</button>
+                <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
         </div>
     </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="메뉴 닫기">✕</button>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#menu" class="mobile-link">Menu</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <button id="mobile-contact-btn" class="btn-primary mobile-cta-btn" style="cursor:pointer; font-family:inherit; font-size:1.1rem; border:none; outline:none; margin-top:1.5rem;">예약 문의</button>
+    </div>
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
 
     <!-- Hero Section -->
     <header class="hero" id="home">
