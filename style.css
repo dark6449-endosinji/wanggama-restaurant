@@ -157,15 +157,17 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    margin-right: 0.5rem;
 }
 
 .navbar-logo-img {
-    height: 45px;
+    height: 52px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -178,7 +180,8 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.6rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -205,7 +208,7 @@ ul {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 /* Hamburger Button */
@@ -333,7 +336,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/hero_bg.png');
+    background-image: url('KakaoTalk_20261012_134904134.jpg');
     background-size: cover;
     background-position: center;
     transform: scale(1.05);
@@ -443,6 +446,33 @@ ul {
 /* =====================================
    About Section
    ===================================== */
+.story-visuals {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.story-visual-card {
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(17, 17, 17, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.story-visual-card img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.story-visual-card:hover img {
+    transform: scale(1.03);
+}
+
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
